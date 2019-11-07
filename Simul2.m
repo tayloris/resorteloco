@@ -1,4 +1,4 @@
-% Animation code
+% Animate the solution
 
 function T=Simul(Y,Vector)
 
@@ -27,7 +27,7 @@ head = line( ...
     %defino el resorte
        h=line(...
         'color','y', ...
-        'LineStyle','.', ...
+        'LineStyle',':', ...
         'markersize',5, ...
         'erase','xor', ...        
         'xdata',[],'ydata',[]);
@@ -71,9 +71,8 @@ head = line( ...
             set(h,'xdata',L1,'ydata',L2)
             drawnow;
             %esto me hace las veces de pauce
-            Pausa=300000;
-            for j=1: Pausa            
-            end 
+
+            pause(0.005)
             if s==0
                 break
             end

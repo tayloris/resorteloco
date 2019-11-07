@@ -9,12 +9,13 @@ r=1.2; % Indica la proporcion de cuanto se estiro r>1 o cuanto se encoogio el re
 % r<0. (r=1 quiere decir que ni se estiro ni se encogio)
 
 tita=0.9; %[rad] Angulo inicial respecto a la vertical 
+
 Vector=[0 0 tita r];%VECTOR CONDICION INICIAL
 
 
 
 %% T final
-t=10; %tiempo que durara la simulacion
+t=50; %tiempo que durara la simulacion
 
 %% RESUELVO EL SISTEMA EN COORDENADAS POLARES
 
